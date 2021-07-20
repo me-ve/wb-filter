@@ -1,0 +1,8 @@
+.vscode
+wb
+*.jpg
+*.png
+*.jpg.old
+*.png.old
+*.ppm
+*.pgm
