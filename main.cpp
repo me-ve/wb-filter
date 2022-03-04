@@ -1,13 +1,13 @@
 #include <iostream>
 #include <fstream>
 
-const double R_RATIO = 0.299;
-const double G_RATIO = 0.587;
-const double B_RATIO = 0.114;
+const double R_RATIO = 299;
+const double G_RATIO = 587;
+const double B_RATIO = 114;
 const int MAX_COLOR = 255;
 
 int rgbtowb(int r, int g, int b){
-    return r*R_RATIO + g*G_RATIO + b*B_RATIO;
+    return (r*R_RATIO + g*G_RATIO + b*B_RATIO)/1000;
 }
 
 int main(int argc, char* argv[]){
